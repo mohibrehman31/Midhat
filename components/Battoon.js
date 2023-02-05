@@ -1,24 +1,31 @@
 import React from "react";
-import { StyleSheet, Text, View, Button } from "react-native";
-const Battoon = ({ title }) => {
+import { StyleSheet, Text, View, Button, TouchableOpacity } from "react-native";
+const Battoon = ({ title, title2 }) => {
   return (
-    <View
-      style={{
-        backgroundColor: "red",
-        flex: 1,
-        // justifyContent: "flex-start",
-        // alignItems: "center",
-        // paddingTop: 55,
-      }}
-    >
-      {/* <Button title={title} color="#FF8901DE" />
-      <View style={{ flex: 1 }}>
-        <Text>Dont Have Account?</Text>
-        <Text>Sign Up</Text>
-      </View> */}
+    <View>
+      <TouchableOpacity>
+        <View style={styles.button}>
+          <Text style={styles.buttonText}>{title}</Text>
+        </View>
+      </TouchableOpacity>
+      <Text style={styles.buttonText}>{title2}</Text>
     </View>
-    // <View></View>
   );
 };
+
+const styles = StyleSheet.create({
+  button: {
+    width: 260,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 20,
+    backgroundColor: "#FF8901",
+  },
+  buttonText: {
+    textAlign: "center",
+    padding: 20,
+    color: "white",
+  },
+});
 
 export default Battoon;
