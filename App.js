@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, Button, Image } from "react-native";
+import Battoon from "./components/Battoon";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Image
+        source={require("C://Users//Mohib//Desktop//Midhat//my//assets//background.png")}
+        style={{ height: 750, width: 360 }}
+        resizeMode="contain"
+      />
+      <Battoon title="Sign In" />
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#1E1E1E",
   },
 });
