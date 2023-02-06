@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, Button, TouchableOpacity } from "react-native";
-const Battoon = ({ title, title2 }) => {
+const Battoon = ({ title, title2, title3 }) => {
   return (
     <View>
       <TouchableOpacity>
@@ -9,6 +9,9 @@ const Battoon = ({ title, title2 }) => {
         </View>
       </TouchableOpacity>
       <Text style={styles.buttonText}>{title2}</Text>
+      <TouchableOpacity>
+        <Text>SignUP</Text>
+      </TouchableOpacity>
     </View>
   );
 };
