@@ -23,21 +23,15 @@ const Welcome = () => {
       </View>
       <View
         style={{
-          // width: 300,
           flexDirection: "row",
           justifyContent: "space-between",
           marginTop: 100,
-          //   width: 200,
-          marginLeft: 20,
-          marginRight: 20,
+          width: 160,
+          marginLeft: 90,
         }}
       >
-        <Box width={"40"} />
-        <Box width={"40"} />
-        <Box width={"40"} />
-        <Box width={"40"} />
-        <Box width={"40"} />
-        <Box width={"40"} />
+        <Box plch={"+92"} />
+        <Box plch={"3XX-XXXXXX"} />
       </View>
       <View style={{ alignItems: "center", marginTop: 100 }}>
         <Battoon title={"Verify"} title2={"Didn't Recieve An OTP?"} />
